@@ -28,11 +28,11 @@ img {
 <p id="demo"></p>
 
 <script>
-const cars = ["Evil West", "God of War Rangarok", "Jurrassic World Evolution", "Sifu", "Coloonists", "Minecraft"];
+const games = ["Evil West", "God of War Rangarok", "Jurrassic World Evolution", "Sifu", "Coloonists", "Minecraft"];
 
 let text = "";
-for (let i = 0; i < cars.length; i++) {
-  text += cars[i] + "<br>";
+for (let i = 0; i < games.length; i++) {
+  text += games[i] + "<br>";
 }
 
 document.getElementById("demo").innerHTML = text;
@@ -45,11 +45,11 @@ document.getElementById("demo").innerHTML = text;
 <p id="love"></p>
 
 <script>
-let carName = "Jurassic World Dominion";
+let gameName = "Jurassic World Dominion";
 myFunction();
 
 function myFunction() {
-  document.getElementById("love").innerHTML = "The game I love the most " + carName;
+  document.getElementById("love").innerHTML = "The game I love the most " + gameName;
 }
 </script>
 </div>
@@ -68,6 +68,23 @@ elem.innerHTML = x;           // Display x in the element
 </script>
 </div>
 
+<div class="informations">
+  <p id="cyber"></p>
+
+<script>
+class Game {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+}
+
+const myGame = new Game("Cyberpunk", 2077);
+document.getElementById("cyber").innerHTML =
+myGame.name + " " + myGame.year;
+</script>
+<p> <b>Cyberpunk 2077 is a game set in the future with cyborgs and robots and stuff already taking over some jobs and still some are still human but a bit cyber.</b></p>
+</div>
 
 <div class="informations">
 <h2>Hobbies</h2>
