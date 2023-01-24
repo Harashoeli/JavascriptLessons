@@ -87,6 +87,25 @@ myGame.name + " " + myGame.year;
 </div>
 
 <div class="informations">
+<h2>Total Games</h2>
+<p>The result of the calculation of the games I got in Steam and Epic Games is:</p>
+<p id="calculationgames"></p>
+
+<script>
+function myDisplayer(something) {
+  document.getElementById("calculationgames").innerHTML = something;
+}
+
+function myCalculator(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+}
+
+myCalculator(10, 10, myDisplayer);
+</script>
+</div>
+
+<div class="informations">
 <h2>Hobbies</h2>
 <p>My Hobbies are playing games such as Apex Legends, League of Legends and Valorant. My second hobby is to draw I love drawing especially anime.</p>
 </div>
